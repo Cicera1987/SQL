@@ -1,0 +1,34 @@
+SQL como linguagem de definição de dados
+Data Definition Language (DDL)
+Tudo que lida com a estrutura de dados
+_____________________________________________
+DML - Se Estrutura os dados(Manipula os dados)
+DML trata:
+* Trata as tuplas, 
+* Trata as ocorrncias, 
+* Trata as instancias
+
+_____________________________________________
+DDL- manipula a estrutura dos dados
+DDL -  Trata
+* Trata as tabelas,
+* Trata os atributos,
+* Trata dominio,
+* Trato vazio,
+* Trata as chaves,
+* Trata referencia de integridade
+
+_____________________________________________
+Instruções para definição do esquema da base de dados:
+
+Definição de tabelas - CREATE
+Cria uma nova tabela na base de dados, especificando nome, atributos e restrições
+
+Alteração de tabelas - ALTER
+Altera definições de uma tabela
+
+Remoção de tabelas - DROP
+Remove uma tabela, quando suas definições não são mais necessárias
+
+
+
