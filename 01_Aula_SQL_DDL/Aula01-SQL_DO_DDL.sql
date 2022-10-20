@@ -15,8 +15,7 @@ comentário em blocos
 */
 
 clientes(id int pk, nome char(100));
-enderecos(  id int pk, logradouro char(100),numero int, 
-            bairro, cidade, estado, id_clente fk);
+enderecos(  id int pk, logradouro char(100),numero int, bairro varchar(100), cidade varchar(100), estado varchar(100), id_clente fk);
 
 /*
 Sintaxe para criar uma tabela.
@@ -28,19 +27,23 @@ create table  nome_da_tabela
 */
 create table clientes
 (
-    id int not null primary key, 
     nome varchar(100) not null,
-    CPF varchar(14) not null unique
+    CPF varchar(14) not null unique,
+    primary key(id, CPF)
 );
 
 create table clientes
 (
     id int not null primary key, 
     nome varchar(100) not null,
-    CPF char(14) not null unique,
+    CPF char(14) not null unique
 );
--- enderecos(  id int pk, logradouro char(100),numero int, 
---              bairro, cidade, estado, id_clente fk);
+
+
+--enderecos(  id int pk, logradouro char(100),numero int, 
+-- bairro varchar(100), cidade varchar(100), estado varchar(100), id_clente fk);
+
+
 create table enderecos
 (
     id int not null primary key, 
@@ -57,9 +60,10 @@ create table enderecos
 -- diferença de char e varchar
 /*
 nome char(10)
-##########
+##########(ocupa todos os 10 espaços na memoria)
 lisa
 nome varchar(10)
+#### (ocupa apenas o numero de espaços usados)
 lisa
 */
 /*

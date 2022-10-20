@@ -5,7 +5,7 @@ _____________________________________________
 DML - Se Estrutura os dados(Manipula os dados)
 DML trata:
 * Trata as tuplas, 
-* Trata as ocorrncias, 
+* Trata as ocorrencias, 
 * Trata as instancias
 
 _____________________________________________
